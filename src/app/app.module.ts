@@ -15,6 +15,7 @@ import { PageNotFoundComponent } from './client/page-not-found/page-not-found.co
 import { ProductsModule } from './client/products/products.module';
 import { ProductService } from './services/product.service';
 import { SlideComponent } from './client/slide/slide.component';
+import { AdminModule } from './admin/admin.module';
 
 
 
@@ -39,6 +40,7 @@ import { SlideComponent } from './client/slide/slide.component';
     FormsModule,
     HttpClientModule,
     LayoutClientModule,
+    AdminModule,
     ProductsModule,
     AppRoutingModule
   ],

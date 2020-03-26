@@ -7,12 +7,14 @@ import { AdminDashboardComponent }  from './admin-dashboard/admin-dashboard.comp
 
 import { AdminRoutingModule }       from './admin-routing.module';
 import { LayoutAdminModule } from './layouts/layouts.module';
+import { ManageProductsModule } from './manage-products/magage-products.module';
 
 @NgModule({
   imports: [
     CommonModule,
     AdminRoutingModule,
-    LayoutAdminModule
+    LayoutAdminModule,
+    ManageProductsModule,
   ],
   declarations: [
     AdminComponent,

@@ -11,12 +11,12 @@ const routes: Routes = [
     path: '',
     component: HomepageComponent
   },
-  {
-    path: 'admin',
-    loadChildren: () => import('./admin/admin.module').then(
-      m => m.AdminModule
-    ),
-  },
+  // {
+  //   path: 'admin',
+  //   loadChildren: () => import('./admin/admin.module').then(
+  //     m => m.AdminModule
+  //   ),
+  // },
   {
     path: '',
     redirectTo: '/home',
