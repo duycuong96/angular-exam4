@@ -1,1 +1,73 @@
-<p>product-detail works!</p>
+<!-- Navigation -->
+<app-menu></app-menu>
+
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+
+    <app-sidebar></app-sidebar>
+
+    </div>
+    <!-- /.col-lg-3 -->
+
+    <div class="col-lg-9">
+      <div class="row">
+
+        <div *ngIf="product">
+          <div class="row">
+            <div class="col-md-6">
+              <a [routerLink]="['/product', product.id]"><img class="card-img-top" [src]="product.image" ></a>
+            </div>
+            <div class="col-md-6">
+              <h2>{{ product.name }}</h2>
+              <h1>{{ product.price }} vnđ</h1>
+
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <p>
+                {{ product.desc }}
+              </p>
+              <hr>
+              <!-- <button (click)="gotoProducts(product)" class="btn btn-primary">Trở lại</button> -->
+            </div>
+
+          </div>
+          <br>
+        </div>
+
+
+
+      </div>
+
+      <router-outlet></router-outlet>
+
+
+
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+
+
+

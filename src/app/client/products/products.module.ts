@@ -6,6 +6,7 @@ import { FormsModule }    from '@angular/forms';
 import { ProductsRoutingModule } from './products-routing.module';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { LayoutClientModule } from '../layouts/layouts.module';
 
 
 
@@ -19,6 +20,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     CommonModule,
     FormsModule,
     ProductsRoutingModule,
+    LayoutClientModule,
   ]
 })
 export class ProductsModule { }

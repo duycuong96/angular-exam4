@@ -8,14 +8,18 @@ import { Observable } from 'rxjs';
 
 export class ProductService {
 
-  products = 'https://5dcf7e2d75f9360014c268b9.mockapi.io/product';
+  productsApi = 'https://5dcf7e2d75f9360014c268b9.mockapi.io/product';
 
   constructor(
     private http: HttpClient
   ){}
 
   getProducts(): Observable<Product[]>{
-    return this.http.get<Product[]>(this.products);
+    return this.http.get<Product[]>(this.productsApi);
+  }
+
+  getProduct(id): Observable<Product>{
+    return this.http.get<Product>(`${this.productsApi}/${id}`);
   }
 
 }
